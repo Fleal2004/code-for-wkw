@@ -29,14 +29,7 @@ public class Robot extends TimedRobot {
       SmartDashboard.putData("Auto mode", m_chooser);
     m_flywheel = new Talon(kMotorPort);
     m_joystick = new Joystick(kJoystickPort);
-  }
-
-  
-  @Override
-  public void testPeriodic() {
-    while(driving == false){
-      goPercent(50, 5);
-      
+    
     }
     m_flywheel.set(-m_joystick.getY());
   }
