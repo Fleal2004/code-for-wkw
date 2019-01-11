@@ -27,10 +27,8 @@ public class Robot extends TimedRobot {
     m_flywheel = new Talon(kMotorPort);
     m_joystick = new Joystick(kJoystickPort);
   }
-
   
        m_flywheel.set(-m_joystick.getY());
-
 
   public void goPercent(int percent, float time)
   {
